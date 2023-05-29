@@ -1,37 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
   <title>Frontend Mentor | Age calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="formulario">
+      <form action="/">
+        <div class="labels">
+          <label for="dia">Day</label>
+          <label for="mes">Month</label>
+          <label for="ano">Year</label>
+        </div>
+        <div class="inputs">
+          <input type="number"  name="dia" id="dia" placeholder="DD" oninput="limitarCaracteres(this,2)">
+          <input type="number" name="mes" id="mes" placeholder="MM" oninput="limitarCaracteres(this,2)">
+          <input type="number" name="ano" id="ano" placeholder="YYYY" oninput="limitarCaracteres(this,4)">
+        </div>
+        <div class="erro">
+          <p id="dia-erro"></p>
+          <p id="mes-erro"></p>
+          <p id="ano-erro"></p>
+        </div>
+        <p id="data-erro"></p>
+      </form>
+    </section>
+    <section class="divisor">
+      <div class="linha"><img src="./assets/images/icon-arrow.svg" alt="flecha" id="flecha">
+    </section>
+    <section class="resultado">
+      <div class="spans">
+        <span id="anos" class="destaque">--</span>
+        <span class="span-data">years</span> 
+      </div>
+      <div class="spans">
+        <span id="meses" class="destaque">--</span> 
+        <span class="span-data">months</span>
+      </div>
+      <div class="spans">
+        <span id="dias" class="destaque">--</span> 
+        <span class="span-data">days</span>
+      </div>
+    </section>
+  </main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<script src="js/index.js"></script>
 </body>
+
 </html>

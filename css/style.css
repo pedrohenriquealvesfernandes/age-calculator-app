@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+
+:root{
+    --roxo: hsl(259, 100%, 65%);
+    --vermelho-claro: hsl(0, 100%, 67%);
+
+    --branco: hsl(0, 0%, 100%);
+    --branco-fraco: hsl(0, 0%, 94%);
+    --cinza-claro: hsl(0, 0%, 86%);
+    --cinza: hsl(0, 1%, 44%);
+    --preto-fraco: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--branco-fraco);
+}
+
+main{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--branco);
+    padding: 2em 1em;
+    margin: 5em 1em;
+    border-radius: 25px 25px 25% 25px;
+}
+
+/* SECTION FORMULáRIO */
+
+form{
+    display: grid;
+}
+
+
+.labels{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .3em;
+}
+
+label{
+    width: 80px;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    font-weight: 700;
+    font-size: .75em;
+    color: var(--cinza);
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between
+}
+
+input[type="number"]{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 5px;
+    height: 45px;
+    width: 80px;
+    padding: 1em .7em;
+    color: var(--preto-fraco);
+}
+
+input[type="number"]:focus{
+    outline: 1px solid var(--roxo);
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; 
+    margin: 0;
+    display: none; 
+}
+
+input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: var(--cinza);
+}
+
+
+.erro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.erro p {
+    width: 80px;
+    font-size: 0.7em;
+    color: var(--vermelho-claro);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#data-erro{
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: var(--vermelho-claro);
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+/* SECTION DIVISOR */
+
+.divisor{
+    margin: 4em 0;
+    position: relative;
+}
+
+.linha{
+    width: 100%;
+    height: 1px;
+    background-color: var(--cinza-claro);
+}
+
+.divisor img{
+    position: absolute;
+    background: var(--roxo);
+    padding: 1em;
+    width: 65px;
+    border-radius: 50%;
+    top: -30px;
+    left: 120px;
+    cursor: pointer;
+}
+
+.divisor img:hover{
+    background: var(--preto-fraco);
+}
+
+
+/* SECTION RESULTADO */
+
+.resultado{
+    margin: 1em 0 .5em 0;
+    font-style: italic;
+    font-weight: 800;
+}
+
+.resultado .spans{
+    font-size: 3em;
+}
+
+.resultado .destaque{
+    color: var(--roxo);
+}
+
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:1440px) {
+   main{
+    width: 800px;
+    margin:2.4em auto;
+    padding: 2em 4em;
+   }
+
+   form{
+    width: 75%;
+   }
+
+   label{
+    width: 100px;
+   }
+
+   input[type="number"]{
+    width: 100px;
+    height: 60px;
+    font-size: 1.65em;
+    padding: 1em 0.5em;
+   }
+
+   .divisor{
+    margin: 2.5em 0;
+   }
+
+   .divisor img{
+    width: 80px;
+    top: -38px;
+    left: 592px;
+   }
+
+   .resultado .spans{
+    font-size: 4em;
+   }
+
+   .resultado .span-data{
+    font-size: 1.2em;
+   }
+
+}
