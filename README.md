@@ -6,7 +6,7 @@
 </div> <br>
 
 # **Sobre o Projeto**
-Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor](https://www.frontendmentor.io/home) feito utilizando responsividade (mobile:375px, desktop:1440px), grid layout, flexbox, mobile first e a API(momentjs). <br><br>
+Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor](https://www.frontendmentor.io/home) feito responsivo, grid layout, flexbox, mobile first e a API(momentjs). <br><br>
   
 
 # **Tecnologias**
@@ -29,4 +29,4 @@ Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor
 LinkedIn</a><br><br>
 
 # **Disponível**
-Clique <a href="https://pedrohenriquealvesfernandes.github.io/age-calculator-app/" style="color: cyan" target="_blank"><strong>AQUI</strong></a> para acessar a projeto em funcionamento.
+Clique <a href="https://pedrohenriquealvesfernandes.github.io/age-calculator-app/" style="color: cyan" target="_blank"><strong>AQUI</strong></a> para acessar a projeto em funcionamento (resolução a ser exibida 1366px (desktop) e 375px (celular) ).
