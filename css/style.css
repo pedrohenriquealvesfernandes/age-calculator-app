@@ -157,10 +157,10 @@ input::placeholder{
 
 /* MEDIA QUERY */
 
-@media screen and (min-width:1440px) {
+@media screen and (min-width:1366px) {
    main{
     width: 800px;
-    margin:2.4em auto;
+    margin:4% auto;
     padding: 2em 4em;
    }
 
