@@ -29,4 +29,4 @@ Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor
 LinkedIn</a><br><br>
 
 # **Disponível**
-Clique <a href="https://pedrohenriquealvesfernandes.github.io/age-calculator-app/" style="color: cyan"><strong>AQUI</strong></a> para acessar a projeto em funcionamento.
+Clique <a href="https://pedrohenriquealvesfernandes.github.io/age-calculator-app/" style="color: cyan" target="_blank"><strong>AQUI</strong></a> para acessar a projeto em funcionamento.
