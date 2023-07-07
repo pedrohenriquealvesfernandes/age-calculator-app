@@ -6,7 +6,7 @@
 </div> <br>
 
 # **Sobre o Projeto**
-Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor](https://www.frontendmentor.io/home) feito responsivo, grid layout, flexbox, mobile first e a API(momentjs). <br><br>
+Projeto <strong>Age-Calculator-App</strong> disponibilizado por [Frontend Mentor](https://www.frontendmentor.io/home) feito utilizando grid layout, flexbox, responsividade, mobile first e a API(momentjs). <br><br>
   
 
 # **Tecnologias**
